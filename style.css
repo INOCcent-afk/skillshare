@@ -1,0 +1,390 @@
+@import url("https://fonts.googleapis.com/css?family=Duru+Sans|Montserrat:100,400|Open+Sans:300,400&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+header {
+  background: #002333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 7px;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+}
+
+.logo {
+  width: 120px;
+  height: auto;
+  cursor: pointer;
+}
+.first-button button {
+  background: transparent;
+  border: 1px solid #00ff84;
+  color: #00ff84;
+  font-size: 14px;
+  padding: 10px 14px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.6s ease 0;
+  margin-left: 10px;
+}
+.first-button button:hover {
+  background: #00ff84;
+  color: #002333;
+}
+@media (min-width: 900px) {
+  header {
+    justify-content: space-between;
+    padding: 30px 10%;
+  }
+}
+@media (min-width: 1400px) {
+  .logo {
+    width: 220px;
+    height: auto;
+  }
+  .first-button button {
+    font-size: 18px;
+    padding: 15px 16px;
+  }
+}
+/* hero-image */
+.img-hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("images/image-2.png");
+  height: 75vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 30px 10% 0px 10%;
+}
+.img-hero-text {
+  font-family: "Catamaran", sans-serif;
+  color: #f2f2f2;
+  text-align: start;
+  text-shadow: 2px 2px #111;
+}
+.img-hero-text h1 {
+  padding: 150px 10px 10px 0px;
+  font-size: 30px;
+  line-height: 1.4;
+}
+.img-hero-text p {
+  padding-top: 10px;
+  font-family: "Catamaran", sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.img-hero-text button {
+  margin-top: 30px;
+  padding: 19px 35px;
+  color: #002333;
+  background-color: rgb(0, 255, 132);
+  border: none;
+  border-radius: 5px;
+  font-weight: bolder;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: all 0.5s ease 0;
+  cursor: pointer;
+}
+.img-hero-text button:hover {
+  background-color: rgba(0, 255, 132, 0.5);
+}
+#edit {
+  font-size: 12px;
+  padding-top: 20px;
+}
+
+@media (min-width: 900px) {
+  .img-hero-text h1 {
+    font-size: 50px;
+    padding: 120px 10px 10px 0px;
+    line-height: 1.4;
+  }
+  .img-hero-text p {
+    font-size: 18px;
+  }
+  .img-hero {
+    padding: 30px 5% 0px 5%;
+    height: 85vh;
+  }
+  #edit {
+    font-size: 14px;
+    letter-spacing: 2px;
+  }
+}
+@media (min-width: 1400px) {
+  .img-hero-text h1 {
+    font-size: 70px;
+    padding: 100px 10px 10px 0px;
+  }
+  .img-hero-text p {
+    font-size: 25px;
+  }
+  .img-hero-text button {
+    font-size: 20px;
+  }
+  .img-hero {
+    padding: 60px 5% 0px 5%;
+    height: 90vh;
+  }
+}
+/* first-section */
+.first-section {
+  font-family: "Catamaran", sans-serif;
+  padding: 50px 5%;
+  color: #002333;
+}
+.first-section h1 {
+  text-align: start;
+  font-size: 30px;
+  font-weight: 100;
+  padding: 30px 0px;
+}
+.first-section p {
+  text-align: start;
+  padding: 30px 0px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(1fr, 1fr);
+  grid-template-rows: repeat(1fr, 1fr);
+  align-content: center;
+  padding: 30px 0px;
+  gap: 5px;
+}
+#gallery__img {
+  width: 45vw;
+  height: auto;
+  object-fit: cover;
+}
+.first-gallery-img {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+.second-gallery-img {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.third-gallery-img {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.fourth-gallery-img {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.first-section button {
+  background-color: transparent;
+  border: 1px solid #3722d3;
+  padding: 14px 25px;
+  color: #3722d3;
+  font-weight: bolder;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.8s ease 0;
+}
+.first-section button:hover {
+  background-color: #3722d3;
+  color: #fff;
+}
+.small-line {
+  background-color: #3722d3;
+  width: 80px;
+  height: 5px;
+  border-radius: 2px;
+  margin-left: 10px;
+}
+@media (min-width: 700px) {
+  #gallery__img {
+    width: 25vw;
+    height: auto;
+  }
+  #first-shit {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #first-shit .gallery-grid {
+    padding-right: 30px;
+  }
+  #second-shit {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+  #second-shit .gallery-grid {
+    padding-left: 30px;
+  }
+  #third-shit {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #third-shit .gallery-grid {
+    padding-right: 30px;
+  }
+}
+@media (min-width: 820px) {
+  .wrapper {
+    padding: 40px 5%;
+  }
+  #gallery__img {
+    width: 200px;
+    height: auto;
+  }
+}
+@media (min-width: 1100px) {
+  .wrapper {
+    padding: 50px 5%;
+  }
+  #gallery__img {
+    width: 240px;
+    height: auto;
+  }
+}
+@media (min-width: 1600px) {
+  #gallery__img {
+    width: 300px;
+    height: auto;
+  }
+  #third-shit .gallery-grid {
+    padding-right: 160px;
+  }
+  #first-shit .gallery-grid {
+    padding-right: 160px;
+  }
+  .first-section h1 {
+    text-align: start;
+    font-size: 45px;
+    font-weight: 100;
+    padding: 0px 50% 30px 0px;
+  }
+  .first-section p {
+    text-align: start;
+    padding: 30px 30% 30px 0px;
+    line-height: 1.6;
+    font-size: 20px;
+  }
+}
+/* fourth-section*/
+.fourth-section {
+  text-align: center;
+  padding: 30px 2%;
+  color: #002333;
+  font-family: "Catamaran", sans-serif;
+}
+.fourth-section h1 {
+  font-weight: 100;
+  line-height: 1.4;
+  padding: 15px 2%;
+}
+.fourth-section h4 {
+  font-size: 16px;
+  line-height: 1.6;
+  padding: 15px 2% 0px 2%;
+}
+.fourth-section p {
+  font-size: 14px;
+  line-height: 1.6;
+  padding: 5px 15% 15px 15%;
+  letter-spacing: 1.5px;
+}
+.fourth-section img {
+  padding-top: 40px;
+}
+.fb img {
+  width: 40px;
+  height: auto;
+}
+.yt img {
+  width: 40px;
+  height: auto;
+}
+.tt img {
+  width: 40px;
+  height: auto;
+}
+
+@media (min-width: 600px) {
+  .flex-bro {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 2%;
+  }
+  .fb img {
+    width: 45px;
+  }
+  .yt img {
+    width: 45px;
+  }
+
+  .tt img {
+    width: 55px;
+  }
+}
+@media (min-width: 1400px) {
+  .flex-bro {
+    padding: 40px 10%;
+  }
+  .fourth-section h1 {
+    padding-right: 10px;
+  }
+}
+/* footer */
+.footer {
+  background-color: #002333;
+  text-align: center;
+  padding: 40px 0px;
+}
+.footer h1 {
+  color: #fff;
+  font-family: "Catamaran", sans-serif;
+  font-size: 20px;
+  padding: 30px 5%;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 1.6;
+}
+
+.footer button {
+  padding: 20px 25px;
+  background-color: rgb(0, 255, 132);
+  color: #002333;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: all 0.3s ease 0;
+  cursor: pointer;
+}
+.footer button:hover {
+  background-color: rgba(0, 255, 132, 0.6);
+}
+
+.footer p {
+  color: #fff;
+  padding-top: 20px;
+  font-weight: 100;
+  font-family: "Open sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
